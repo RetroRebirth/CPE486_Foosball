@@ -1,0 +1,45 @@
+11
+82
+0 0 10 0
+@V2 2 RESOURCE Resource 0 0 0
+	
+86
+10 1 0 0
+@V2 10 @ Global_Variables 0 0 0
+F C\Configuration\R\Resource\Global_Variables.vb
+12
+6 1 3 0
+@V2 12 @ FUNCTIONS 0 0 0
+	
+78
+7 2 0 0
+@V2 6 INT_TO_LREAL INT_TO_LREAL 0 6 0
+	
+78
+8 2 0 0
+@V2 6 MUL MUL 0 5 0
+	
+78
+9 2 0 0
+@V2 6 AND AND 0 1 0
+	
+84
+1 1 4 0
+@V2 3 @ Task 0 0 0
+F 
+80
+2 2 2 0
+@V2 4 Main Main 1 2 0
+	
+70
+3 3 0 0
+@V2 5 CTU CTU_1 2 3 1
+	
+70
+4 3 0 0
+@V2 5 CTU max_capacity 3 3 4
+	
+80
+5 2 0 0
+@V2 4 money money 4 4 0
+	

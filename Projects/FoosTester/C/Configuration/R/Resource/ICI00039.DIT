@@ -1,0 +1,82 @@
+(*
+T: FUNCTION_BLOCK ENABLE_ROD
+FW: NO
+CI#: 39
+QSL: 12
+QVE: 12
+QVPC: 12
+QPar: 6
+QFBI: 4
+*)
+@V 1 6 0
+TRANS_STATUS	1	VAR	@TYP:1
+		     
+
+;
+
+@V 1 7 0
+ROT_STATUS	2	VAR	@TYP:1
+		     
+
+;
+
+@V 1 15 0
+ROD_SATUS	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 16 0
+ROD_ERROR	4	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 24 0
+ROD_ENABLE	5	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 25 0
+TRANS_AXIS_TO_ENABLE	6	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 26 0
+ROT_AXIS_TO_ENABLE	7	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 27 0
+RESET_ROD	8	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 35 0
+MC_Power_TRANS	9	VAR	@FB:53
+		     
+
+;
+
+@V 1 36 0
+MC_Power_ROT	10	VAR	@FB:53
+		     
+
+;
+
+@V 1 37 0
+MC_Reset_TRANS	11	VAR	@FB:52
+		     
+
+;
+
+@V 1 38 0
+MC_Reset_ROT	12	VAR	@FB:52
+		     
+
+;
+

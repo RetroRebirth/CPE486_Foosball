@@ -1,0 +1,6 @@
+TASKDIR	4	Tasks		PLC_Simulator	PLC_Simulator
+TASK	5	Task		PLC_Simulator	PLC_Simulator
+PROGRAM	6	Main	Main	PLC_Simulator	PLC_Simulator
+PROGRAM	6	money	money	PLC_Simulator	PLC_Simulator
+VAR_GLOBALS	4	Global_Variables	C\Configuration\R\Resource\Global_Variables.VGR		
+IO/CONFIGURATION	4	IO_Configuration	C\Configuration\R\Resource\IOCONFIG.CNF		

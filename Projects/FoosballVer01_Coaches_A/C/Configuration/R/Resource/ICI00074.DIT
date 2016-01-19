@@ -1,0 +1,100 @@
+(*
+T: FUNCTION_BLOCK ROD_INFORMATION
+FW: NO
+CI#: 74
+QSL: 15
+QVE: 15
+QVPC: 15
+QPar: 9
+QFBI: 6
+*)
+@V 1 6 0
+MC_ReadActualPosition_TRANS	1	VAR	@FB:76
+		     
+
+;
+
+@V 1 7 0
+MC_ReadActualPosition_ROT	2	VAR	@FB:76
+		     
+
+;
+
+@V 1 12 0
+TRANS_AXIS	3	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 13 0
+ROT_AXIS	4	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 18 0
+MC_ReadActualVelocity_TRANS	5	VAR	@FB:75
+		     
+
+;
+
+@V 1 19 0
+MC_ReadActualVelocity_ROT	6	VAR	@FB:75
+		     
+
+;
+
+@V 1 20 0
+MC_ReadActualTorque_TRANS	7	VAR	@FB:61
+		     
+
+;
+
+@V 1 21 0
+MC_ReadActualTorque_ROT	8	VAR	@FB:61
+		     
+
+;
+
+@V 1 26 0
+TRANS_POSITION	9	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 27 0
+ROT_POSITION	10	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 28 0
+TRANS_VELOCITY	11	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 29 0
+ROT_VELOCITY	12	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 30 0
+TRANS_TORQUE	13	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 31 0
+ROT_TOQUE	14	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 36 0
+PAUSE_COLLECT	15	VAR_INPUT	@TYP:1
+		     
+
+;
+

@@ -1,0 +1,46 @@
+(*
+T: PROGRAM Initialize_2
+FW: NO
+CI#: 51
+QSL: 6
+QVE: 6
+QVPC: 6
+QPar: 0
+QFBI: 4
+*)
+@V 1 6 0
+MC_SetPosition_1	1	VAR	@FB:53
+		     
+
+;
+
+@V 1 11 0
+rOTATION	2	VAR_EXTERNAL	@TYP:1061
+@RV 2		     
+
+;
+
+@V 1 16 0
+MC_Reset_1	3	VAR	@FB:52
+		     
+
+;
+
+@V 1 17 0
+MC_SetPosition_2	4	VAR	@FB:53
+		     
+
+;
+
+@V 1 22 0
+traNSLATION	5	VAR_EXTERNAL	@TYP:1061
+@RV 39		     
+
+;
+
+@V 1 27 0
+MC_SetPosition_3	6	VAR	@FB:53
+		     
+
+;
+

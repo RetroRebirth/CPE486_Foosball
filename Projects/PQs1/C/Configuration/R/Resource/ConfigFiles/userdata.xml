@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<controllerConfig>
+  <machineName>MyMachine</machineName>
+  <ipAddress>192.168.1.1</ipAddress>
+  <subnetMask>255.255.255.0</subnetMask>
+  <gateway>192.168.1.253</gateway>
+  <ioDeviceId>65534</ioDeviceId>
+  <lastIoDeviceId>65535</lastIoDeviceId>
+  <versions>
+    <minFirmware>1.0.6.1</minFirmware>
+    <actualFirmware>1.0.6.1</actualFirmware>
+    <ide>2.5.0.77</ide>
+    <updatedGearRatio>1.0.6.1</updatedGearRatio>
+  </versions>
+</controllerConfig>

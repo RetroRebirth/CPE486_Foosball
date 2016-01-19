@@ -1,0 +1,3 @@
+TYPE
+	PositionArray : ARRAY [0..9] OF LREAL;
+END_TYPE

@@ -1,0 +1,16 @@
+(*
+NN: 0
+NC: 1
+NR: 1
+NTN: 0
+NTC: 1
+NTR: 1
+*)
+PROC	NETWORK	Network	1
+.
+PROC	CONFIGURATION	Configuration	eCLR	1
+C\Configuration
+PROC	RESOURCE	Resource	MP3200iec
+C\Configuration\R\Resource
+PROC	VAR_GLOBAL	Global_Variables
+C\Configuration\R\Resource\Global_Variables.VB

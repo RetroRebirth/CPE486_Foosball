@@ -1,0 +1,82 @@
+(*
+T: FUNCTION_BLOCK KICK_FUN
+FW: NO
+CI#: 57
+QSL: 12
+QVE: 12
+QVPC: 12
+QPar: 6
+QFBI: 4
+*)
+@V 1 6 0
+MC_MoveAbsolute_FORWARD	1	VAR	@FB:60
+		     
+
+;
+
+@V 1 11 0
+ROT_AXIS	2	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 12 0
+SHOOT_NOW	3	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 17 0
+MC_MoveAbsolute_RETURN	4	VAR	@FB:60
+		     
+
+;
+
+@V 1 22 0
+KICK_VEL	5	VAR_INPUT	@TYP:11
+		     
+@TYP:11# 5.00000000000000000E+003
+;
+
+@V 1 23 0
+KICK_ACCEL	6	VAR_INPUT	@TYP:11
+		     
+@TYP:11# 5.00000000000000000E+004
+;
+
+@V 1 28 0
+MC_MoveAbsolute_REVERSE	7	VAR	@FB:60
+		     
+
+;
+
+@V 1 29 0
+KICK_ANG_FWRD	8	VAR	@TYP:11
+		     
+@TYP:11# 6.00000000000000000E+001
+;
+
+@V 1 30 0
+KICK_ANG_REV	9	VAR	@TYP:11
+		     
+@TYP:11# 3.15000000000000000E+002
+;
+
+@V 1 35 0
+KICK_DONE	10	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 40 0
+ROT_TORQUE_MONITOR_2	11	VAR	@FB:61
+		     
+
+;
+
+@V 1 45 0
+TLIM_BUSY	12	VAR_OUTPUT	@TYP:1
+		     
+
+;
+

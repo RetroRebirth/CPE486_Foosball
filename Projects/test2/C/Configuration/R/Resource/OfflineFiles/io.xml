@@ -1,0 +1,377 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<io>
+  <ioManager>
+
+    <!--
+      NOTE: If the auto-config switch (CNFG) on the front of the MP2300i is turned ON,
+            all I/O words that can be auto-discovered, including servo network I/O, will
+            be populated and assigned an unused I/O word ID. The settings in this configuration
+            file will be honored. Many types of servo network nodes, including SGDS 
+            servopacks, have I/O words (e.g. IO_MON and STATUS) available for auto-detection. 
+    -->
+
+    <!-- 
+      List of all inputs: 
+    -->
+
+    <!-- FOR REFERENCE: 
+      Complete CPU input example:
+        <logicalInput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <cpuIO>
+            <wordIndex>0</wordIndex>
+          </cpuIO>
+          <debounce>
+            <period>1.0</period>
+            <mask>0x0001</mask>
+          </debounce>
+        </logicalInput>
+
+      Typical CPU input example:
+        <logicalInput>
+          <id>0</id>
+          <cpuIO>
+            <type>Digital</type>
+          </cpuIO>
+        </logicalInput>
+
+      Complete card input example:
+        <logicalInput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Digital</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+          <debounce>
+            <period>1.0</period>
+            <mask>0x0001</mask>
+          </debounce>
+        </logicalInput>
+
+      Typical card input example:
+        <logicalInput>
+          <id>0</id>
+          <cardIO>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </logicalInput>
+
+
+      Complete Network input example:
+        <logicalInput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <networkIO>
+            <wordIndex>0</wordIndex>
+            <type>Digital</type>
+            <nodeID>1</nodeID>
+          </networkIO>
+          <debounce>
+            <period>1.0</period>
+            <mask>0x0001</mask>
+          </debounce>
+        </logicalInput>
+
+      Typical network input example
+        <logicalInput>
+          <id>0</id>
+          <networkIO>
+            <wordIndex>0</wordIndex>
+            <nodeID>1</nodeID>
+          </networkIO>
+        </logicalInput>
+    -->
+
+
+    <!-- 
+      List of all outputs:
+    -->
+
+    <!-- FOR REFERENCE:
+      Complete CPU output example:
+        <logicalOutput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <cpuIO>
+            <wordIndex>0</wordIndex>
+          </cpuIO>
+          <outputOnStartup>0x0001</outputOnStartup>
+        </logicalOutput>
+
+      Typical CPU output example:
+        <logicalOutput>
+          <id>0</id>
+          <cpuIO>
+            <type>Digital</type>
+          </cpuIO>
+        </logicalOutput>
+
+      Complete card output example:
+        <logicalOutput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Digital</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+          <outputOnStartup>0x0001</outputOnStartup>
+        </logicalOutput>
+
+      Typical card output example:
+        <logicalOutput>
+          <id>0</id>
+          <cardIO>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </logicalOutput>
+
+
+      Complete network output example:
+        <logicalOutput>
+          <id>0</id>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <networkIO>
+            <wordIndex>0</wordIndex>
+            <type>Digital</type>
+            <nodeID>1</nodeID>
+          </networkIO>
+          <outputOnStartup>0x0001</outputOnStartup>
+        </logicalOutput>
+
+      Typical network output example
+        <logicalOutput>
+          <id>0</id>
+          <networkIO>
+            <wordIndex>0</wordIndex>
+            <nodeID>1</nodeID>
+          </networkIO>
+        </logicalOutput>
+    -->
+
+    <!-- 
+      List of all analogIputs
+        default config does not have any.
+    -->
+    <!-- FOR REFERENCE:
+
+      Typical card analog input example:
+        <analogInput>
+          <id>0</id>
+          <userScale>1.0</userScale> 
+          <userOffset>0.0</userOffset>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Analog</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </analogInput>
+
+      Complete card analog input example:  (Only 'id' and 'cardIO' are required elements.)
+        <analogInput>
+          <id>0</id>
+          <userScale>1.0</userScale> 
+          <userOffset>0.0</userOffset>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <hardwareConfig>
+            <interpType>sint16</interpType>
+            <hardwareRange>
+              <min>-31276</min>
+              <max>31276</max>
+            </hardwareRange>
+            <nativeRange>
+              <min>-10.0</min>
+              <max>10.0</max>
+            </nativeRange>
+          </hardwareConfig>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Analog</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </analogInput>
+
+    -->
+
+    <!-- 
+      List of all analogOutputs
+        default config does not have any.
+    -->
+    <!-- FOR REFERENCE:
+
+      Typical card analog output example:
+        <analogOutput>
+          <id>0</id>
+          <userScale>1.0</userScale> 
+          <userOffset>0.0</userOffset>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Analog</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </analogOutput>
+
+      Complete card analog output example:  (Only 'id' and 'cardIO' are required elements.)
+        <analogOutput>
+          <id>0</id>
+          <userScale>1.0</userScale> 
+          <userOffset>0.0</userOffset>
+          <mask>0xffffffff</mask>
+          <shift>0</shift>
+          <hardwareConfig>
+            <interpType>sint16</interpType>
+            <hardwareRange>
+              <min>-31276</min>
+              <max>31276</max>
+            </hardwareRange>
+            <nativeRange>
+              <min>-10.0</min>
+              <max>10.0</max>
+            </nativeRange>
+          </hardwareConfig>
+          <cardIO>
+            <wordIndex>0</wordIndex>
+            <type>Analog</type>
+            <slotNo>1</slotNo>
+          </cardIO>
+        </analogOutput>
+
+    -->
+
+
+    <ioScan>
+      <triggerMultiple>1</triggerMultiple>
+      <offset>0</offset>
+    </ioScan>
+
+  </ioManager>
+
+  <!-- 
+    optional element: abortInputs
+  -->
+  <!--
+  <abortInputs>
+    <input>
+      <wordID> 0 </wordID>
+      <bit> 7 </bit>
+      <value> 1 </value>
+    </input>
+    <mode>
+      <type> timedDecel </type>
+      <decelTime> 0.5 </decelTime>
+      <servoOff> true </servoOff>
+    </mode>
+  </abortInputs>
+  -->
+
+  <!-- 
+    optional element: etherNetIPIO
+
+    - client/remoteServer may be repeated
+    - client/remoteSeerver/input|output: elements 'ownership', 'priority', and 'type' are optional (shown with defaults)
+    - 'ownership' element can be 'exclusive', 'redundant', 'inputOnly', or 'listenOnly'
+    - 'priority' element can be 'low', 'high', 'scheduled', or 'urgent'
+    - 'type' element can be 'pointToPoint' or 'multicast'
+    - 'useRunIdle' defaults to 'true' for <output>s and 'false' for <input>s
+    - 'server' element contains a list of 0 or more 't2o' elements followed by a list of 0 or more 'o2t' elements
+    - 'ide' and all its sub-elements are optional and not used by the controller (IDE info storage)
+  -->
+  <!--
+  <etherNetIPIO>
+    <client>
+      <remoteServer>
+        <id> 1 </id>
+        <ipAddr> 192.168.1.99 </ipAddr>
+        <input>
+          <instance> 1 </instance>
+          <dataSz> 16 </dataSz>
+          <rpi> 10000 </rpi> 
+          <ownership> exclusive </ownership>
+          <priority> low </priority>
+          <type> pointToPoint </type>
+          <useRunIdle> false </useRunIdle>
+        </input>
+        <output>
+          <instance> 2 </instance>
+          <dataSz> 16 </dataSz>
+          <rpi> 10000 </rpi> 
+          <ownership> exclusive </ownership>
+          <priority> low </priority>
+          <type> pointToPoint </type>
+          <useRunIdle> true </useRunIdle>
+        </output>
+        <ide>
+          <name> foo </name>
+          <statusVariable> fooVar </statusVariable>
+          <ideGroup> fooGroup </ideGroup>
+          <comment> etc </comment>
+        </ide>
+      </remoteServer>
+    </client>
+    <server>
+      <t2o>
+        <instance> 1 </instance>
+        <dataSz> 16 </dataSz>
+      </t2o>
+      <o2t>
+        <instance> 2 </instance>
+        <dataSz> 16 </dataSz>
+      </o2t>
+    </server>
+  </etherNetIPIO>
+  -->
+
+  <!--
+    optional element: modBusTCPIO
+
+    - client/remoteServer may be repeated
+    - most client elements except id, ipAddr, dataType, startAddr, and size are optional (shown with defaults where applicable)
+    - dataType element can be 'coils', 'inputs', 'registers', or 'inputRegisters'
+  -->
+  <!--
+  <modBusTCPIO>
+    <client>
+      <pollPeriodMs> 100 </pollPeriodMs>
+      <remoteServer>
+        <id> 1 </id>
+        <ipAddr> 192.168.1.99 </ipAddr>
+        <unit> 1 </unit>
+        <input>
+          <dataType> coils </dataType>
+          <startAddr> 100 </startAddr>
+          <size> 16 </size>
+        </input>
+        <output>
+          <dataType> registers </dataType>
+          <startAddr> 100 </startAddr>
+          <size> 16 </size>
+        </output>
+        <ide>
+          <name> foo </name>
+          <statusVariable> fooVar </statusVariable>
+          <ideGroup> fooGroup </ideGroup>
+          <comment> etc </comment>
+        </ide>
+      </remoteServer>
+    </client>
+    <server>
+      <coils> 64 </coils>
+      <registers> 16 </registers>
+      <inputs> 16 </inputs>
+      <inputRegisters> 8 </inputRegisters>
+      <overlay> false </overlay>
+    </server>
+  </modBusTCPIO>
+  -->
+
+</io>

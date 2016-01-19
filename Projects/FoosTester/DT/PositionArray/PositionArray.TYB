@@ -1,0 +1,3 @@
+TYPE
+	PositionArray : ARRAY [0..10] OF UINT;
+END_TYPE

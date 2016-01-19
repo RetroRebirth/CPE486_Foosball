@@ -1,0 +1,94 @@
+(*
+T: FUNCTION_BLOCK PLAYER_CATCH
+FW: NO
+CI#: 50
+QSL: 14
+QVE: 14
+QVPC: 14
+QPar: 10
+QFBI: 2
+*)
+@V 1 6 0
+TRANS_ACCEL	1	VAR_EXTERNAL	@TYP:11
+@RV 49		     
+
+;
+
+@V 1 7 0
+TRANS_VELOCITY	2	VAR_EXTERNAL	@TYP:11
+@RV 50		     
+
+;
+
+@V 1 15 0
+ACT	3	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 16 0
+X_POS	4	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 17 0
+Y_POS	5	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 18 0
+PLAYER_TRANS	6	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 19 0
+PLAYER_ROT	7	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 20 0
+MAX_PLAYER_TRANS	8	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 21 0
+PLAYER_POS	9	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 22 0
+BACK_KICK_RANGE	10	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 23 0
+SWING_NOW	11	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 24 0
+FRONT_KICK_RANGE	12	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 32 0
+PLAYER_SWING	13	VAR	@FB:54
+		     
+
+;
+
+@V 1 33 0
+PLAYER_ROD_TRANS	14	VAR	@FB:55
+		     
+
+;
+

@@ -1,0 +1,46 @@
+(*
+T: FUNCTION_BLOCK POS_ARRAY
+FW: NO
+CI#: 38
+QSL: 6
+QVE: 6
+QVPC: 6
+QPar: 4
+QFBI: 0
+*)
+@V 1 6 0
+Y_Guess	1	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 7 0
+X_Guess	2	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 12 0
+Y_POS	3	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 13 0
+X_POS	4	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 18 0
+Y_Values	5	VAR	@TYP:1024
+		     
+
+;
+
+@V 1 19 0
+X_Values	6	VAR	@TYP:1024
+		     
+
+;
+

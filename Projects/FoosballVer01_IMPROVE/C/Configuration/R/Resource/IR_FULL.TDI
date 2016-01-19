@@ -1,0 +1,981 @@
+245
+82
+0 0 244 0
+@V2 2 RESOURCE Resource 0 0 0
+	
+86
+244 1 0 0
+@V2 10 @ Global_Variables 0 0 0
+F C\Configuration\R\Resource\Global_Variables.vb
+12
+207 1 36 0
+@V2 12 @ FUNCTIONS 0 0 0
+	
+78
+208 2 0 0
+@V2 6 LIMIT LIMIT 0 56 0
+	
+78
+209 2 0 0
+@V2 6 UINT_TO_LREAL UINT_TO_LREAL 0 36 0
+	
+78
+210 2 0 0
+@V2 6 MAX MAX 0 34 0
+	
+78
+211 2 0 0
+@V2 6 MIN MIN 0 33 0
+	
+78
+212 2 0 0
+@V2 6 NEG NEG 0 32 0
+	
+78
+213 2 0 0
+@V2 6 ATAN ATAN 0 31 0
+	
+78
+214 2 0 0
+@V2 6 ACOS ACOS 0 30 0
+	
+78
+215 2 0 0
+@V2 6 ASIN ASIN 0 29 0
+	
+78
+216 2 0 0
+@V2 6 TAN TAN 0 28 0
+	
+78
+217 2 0 0
+@V2 6 COS COS 0 27 0
+	
+78
+218 2 0 0
+@V2 6 SIN SIN 0 26 0
+	
+78
+219 2 0 0
+@V2 6 EXP EXP 0 25 0
+	
+78
+220 2 0 0
+@V2 6 LOG LOG 0 24 0
+	
+78
+221 2 0 0
+@V2 6 LN LN 0 23 0
+	
+78
+222 2 0 0
+@V2 6 SQRT SQRT 0 22 0
+	
+78
+223 2 0 0
+@V2 6 ABS ABS 0 21 0
+	
+78
+224 2 0 0
+@V2 6 ROL ROL 0 20 0
+	
+78
+225 2 0 0
+@V2 6 ROR ROR 0 19 0
+	
+78
+226 2 0 0
+@V2 6 SHR SHR 0 18 0
+	
+78
+227 2 0 0
+@V2 6 SHL SHL 0 17 0
+	
+78
+228 2 0 0
+@V2 6 MOD MOD 0 16 0
+	
+78
+229 2 0 0
+@V2 6 DIV DIV 0 15 0
+	
+78
+230 2 0 0
+@V2 6 SUB SUB 0 14 0
+	
+78
+231 2 0 0
+@V2 6 MUL MUL 0 13 0
+	
+78
+232 2 0 0
+@V2 6 ADD ADD 0 12 0
+	
+78
+233 2 0 0
+@V2 6 NE NE 0 11 0
+	
+78
+234 2 0 0
+@V2 6 LT LT 0 10 0
+	
+78
+235 2 0 0
+@V2 6 LE LE 0 9 0
+	
+78
+236 2 0 0
+@V2 6 EQ EQ 0 8 0
+	
+78
+237 2 0 0
+@V2 6 GT GT 0 7 0
+	
+78
+238 2 0 0
+@V2 6 GE GE 0 6 0
+	
+78
+239 2 0 0
+@V2 6 NOT NOT 0 5 0
+	
+78
+240 2 0 0
+@V2 6 XOR XOR 0 4 0
+	
+78
+241 2 0 0
+@V2 6 OR OR 0 3 0
+	
+78
+242 2 0 0
+@V2 6 EXPT EXPT 0 2 0
+	
+78
+243 2 0 0
+@V2 6 AND AND 0 1 0
+	
+84
+1 1 171 0
+@V2 3 @ FastTsk 0 0 0
+F 
+80
+2 2 0 0
+@V2 4 Ball_Position_Logic BALL_POS 1 35 0
+	
+80
+3 2 168 0
+@V2 4 Main Main 2 37 0
+	
+70
+4 3 4 0
+@V2 5 ENABLE_ROD ENABLE_GOALIE 3 40 1
+	
+70
+48 4 0 0
+@V2 5 MC_Power MC_Power_TRANS 47 54 9
+	
+70
+49 4 0 0
+@V2 5 MC_Power MC_Power_ROT 48 54 10
+	
+70
+50 4 0 0
+@V2 5 MC_Reset MC_Reset_TRANS 49 53 11
+	
+70
+51 4 0 0
+@V2 5 MC_Reset MC_Reset_ROT 50 53 12
+	
+70
+5 3 2 0
+@V2 5 ZERO_SINGLE_ROD ZERO_SINGLE_GOALIE 4 43 2
+	
+70
+52 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_TRANS 51 55 1
+	
+70
+53 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_ROT 52 55 2
+	
+70
+6 3 7 0
+@V2 5 KICK_FUN KICK_FUN_GOALIE 5 39 3
+	
+70
+54 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_FORWARD 53 50 1
+	
+70
+55 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_RETURN 54 50 4
+	
+70
+56 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_REVERSE 55 50 7
+	
+70
+57 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_2 56 51 11
+	
+70
+58 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 57 52 1
+	
+70
+59 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 58 50 3
+	
+70
+60 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 59 50 4
+	
+70
+7 3 7 0
+@V2 5 KICK_FUN KICK_FUN_FWD 6 39 12
+	
+70
+61 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_FORWARD 60 50 1
+	
+70
+62 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_RETURN 61 50 4
+	
+70
+63 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_REVERSE 62 50 7
+	
+70
+64 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_2 63 51 11
+	
+70
+65 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 64 52 1
+	
+70
+66 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 65 50 3
+	
+70
+67 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 66 50 4
+	
+70
+8 3 4 0
+@V2 5 ENABLE_ROD ENABLE_FWD 7 40 14
+	
+70
+68 4 0 0
+@V2 5 MC_Power MC_Power_TRANS 67 54 9
+	
+70
+69 4 0 0
+@V2 5 MC_Power MC_Power_ROT 68 54 10
+	
+70
+70 4 0 0
+@V2 5 MC_Reset MC_Reset_TRANS 69 53 11
+	
+70
+71 4 0 0
+@V2 5 MC_Reset MC_Reset_ROT 70 53 12
+	
+70
+9 3 2 0
+@V2 5 HOME_SINGLE_ROD HOME_SINGLE_FWD 8 42 15
+	
+70
+72 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_TRANS 71 50 1
+	
+70
+73 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_ROT 72 50 2
+	
+70
+10 3 2 0
+@V2 5 ZERO_SINGLE_ROD ZERO_SINGLE_FWD 9 43 18
+	
+70
+74 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_TRANS 73 55 1
+	
+70
+75 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_ROT 74 55 2
+	
+70
+11 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_FWD 10 44 25
+	
+70
+12 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_FWD_Zero 11 41 26
+	
+70
+76 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 75 50 7
+	
+70
+77 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 76 51 8
+	
+70
+78 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 77 52 1
+	
+70
+79 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 78 50 3
+	
+70
+80 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 79 50 4
+	
+70
+13 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_FWD_UP 12 41 27
+	
+70
+81 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 80 50 7
+	
+70
+82 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 81 51 8
+	
+70
+83 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 82 52 1
+	
+70
+84 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 83 50 3
+	
+70
+85 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 84 50 4
+	
+70
+14 3 0 0
+@V2 5 FWD_POSITION_LOGIC FWD_POSITION_LOGIC 13 47 31
+	
+70
+15 3 1 0
+@V2 5 SINGLE_ROD_TRANSLATION SINGLE_ROD_TRANSLATION_FWD 14 49 32
+	
+70
+86 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 85 50 8
+	
+70
+16 3 2 0
+@V2 5 HOME_SINGLE_ROD HOME_SINGLE_GOALIE 15 42 37
+	
+70
+87 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_TRANS 86 50 1
+	
+70
+88 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_ROT 87 50 2
+	
+70
+17 3 0 0
+@V2 5 GOALIE_POSITION_LOGIC GOALIE_POSITION_LOGIC 16 48 39
+	
+70
+18 3 4 0
+@V2 5 ENABLE_ROD ENABLE_DEF 17 40 40
+	
+70
+89 4 0 0
+@V2 5 MC_Power MC_Power_TRANS 88 54 9
+	
+70
+90 4 0 0
+@V2 5 MC_Power MC_Power_ROT 89 54 10
+	
+70
+91 4 0 0
+@V2 5 MC_Reset MC_Reset_TRANS 90 53 11
+	
+70
+92 4 0 0
+@V2 5 MC_Reset MC_Reset_ROT 91 53 12
+	
+70
+19 3 7 0
+@V2 5 KICK_FUN KICK_FUN_DEF 18 39 44
+	
+70
+93 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_FORWARD 92 50 1
+	
+70
+94 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_RETURN 93 50 4
+	
+70
+95 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_REVERSE 94 50 7
+	
+70
+96 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_2 95 51 11
+	
+70
+97 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 96 52 1
+	
+70
+98 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 97 50 3
+	
+70
+99 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 98 50 4
+	
+70
+20 3 2 0
+@V2 5 ZERO_SINGLE_ROD ZERO_SINGLE_DEF 19 43 45
+	
+70
+100 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_TRANS 99 55 1
+	
+70
+101 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_ROT 100 55 2
+	
+70
+21 3 2 0
+@V2 5 HOME_SINGLE_ROD HOME_SINGLE_DEF 20 42 48
+	
+70
+102 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_TRANS 101 50 1
+	
+70
+103 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_ROT 102 50 2
+	
+70
+22 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_DEF_ZERO 21 41 49
+	
+70
+104 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 103 50 7
+	
+70
+105 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 104 51 8
+	
+70
+106 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 105 52 1
+	
+70
+107 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 106 50 3
+	
+70
+108 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 107 50 4
+	
+70
+23 3 0 0
+@V2 5 DEF_POSITION_LOGIC DEF_POSITION_LOGIC 22 45 50
+	
+70
+24 3 4 0
+@V2 5 ENABLE_ROD ENABLE_MID 23 40 51
+	
+70
+109 4 0 0
+@V2 5 MC_Power MC_Power_TRANS 108 54 9
+	
+70
+110 4 0 0
+@V2 5 MC_Power MC_Power_ROT 109 54 10
+	
+70
+111 4 0 0
+@V2 5 MC_Reset MC_Reset_TRANS 110 53 11
+	
+70
+112 4 0 0
+@V2 5 MC_Reset MC_Reset_ROT 111 53 12
+	
+70
+25 3 7 0
+@V2 5 KICK_FUN KICK_FUN_MID 24 39 52
+	
+70
+113 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_FORWARD 112 50 1
+	
+70
+114 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_RETURN 113 50 4
+	
+70
+115 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_REVERSE 114 50 7
+	
+70
+116 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_2 115 51 11
+	
+70
+117 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 116 52 1
+	
+70
+118 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 117 50 3
+	
+70
+119 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 118 50 4
+	
+70
+26 3 2 0
+@V2 5 ZERO_SINGLE_ROD ZERO_SINGLE_MID 25 43 54
+	
+70
+120 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_TRANS 119 55 1
+	
+70
+121 4 0 0
+@V2 5 MC_SetPosition MC_SetPosition_ROT 120 55 2
+	
+70
+27 3 2 0
+@V2 5 HOME_SINGLE_ROD HOME_SINGLE_MID 26 42 57
+	
+70
+122 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_TRANS 121 50 1
+	
+70
+123 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_ROT 122 50 2
+	
+70
+28 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_MID 27 41 58
+	
+70
+124 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 123 50 7
+	
+70
+125 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 124 51 8
+	
+70
+126 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 125 52 1
+	
+70
+127 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 126 50 3
+	
+70
+128 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 127 50 4
+	
+70
+29 3 0 0
+@V2 5 MID_POSITION_LOGIC MID_POSITION_LOGIC 28 46 59
+	
+70
+30 3 1 0
+@V2 5 SINGLE_ROD_TRANSLATION SINGLE_ROD_TRANSLATION_MID 29 49 60
+	
+70
+129 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 128 50 8
+	
+70
+31 3 0 0
+@V2 5 Defense Defense_1 30 38 61
+	
+70
+32 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_1_ZERO 31 41 63
+	
+70
+130 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 129 50 7
+	
+70
+131 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 130 51 8
+	
+70
+132 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 131 52 1
+	
+70
+133 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 132 50 3
+	
+70
+134 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 133 50 4
+	
+70
+33 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_1_UP 32 41 64
+	
+70
+135 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 134 50 7
+	
+70
+136 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 135 51 8
+	
+70
+137 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 136 52 1
+	
+70
+138 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 137 50 3
+	
+70
+139 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 138 50 4
+	
+70
+34 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_2 33 44 66
+	
+70
+35 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_2_UP 34 41 67
+	
+70
+140 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 139 50 7
+	
+70
+141 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 140 51 8
+	
+70
+142 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 141 52 1
+	
+70
+143 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 142 50 3
+	
+70
+144 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 143 50 4
+	
+70
+36 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_3_UP 35 41 68
+	
+70
+145 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 144 50 7
+	
+70
+146 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 145 51 8
+	
+70
+147 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 146 52 1
+	
+70
+148 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 147 50 3
+	
+70
+149 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 148 50 4
+	
+70
+37 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_1 36 44 69
+	
+70
+38 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_3 37 44 70
+	
+70
+39 3 1 0
+@V2 5 SINGLE_ROD_TRANSLATION SINGLE_ROD_TRANSLATION_GOALIE 38 49 71
+	
+70
+150 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 149 50 8
+	
+70
+40 3 1 0
+@V2 5 SINGLE_ROD_TRANSLATION SINGLE_ROD_TRANSLATION_DEF 39 49 72
+	
+70
+151 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 150 50 8
+	
+70
+41 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_DEF_UP 40 41 73
+	
+70
+152 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 151 50 7
+	
+70
+153 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 152 51 8
+	
+70
+154 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 153 52 1
+	
+70
+155 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 154 50 3
+	
+70
+156 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 155 50 4
+	
+70
+42 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_DEF 41 44 74
+	
+70
+43 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_MID_UP 42 41 75
+	
+70
+157 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 156 50 7
+	
+70
+158 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 157 51 8
+	
+70
+159 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 158 52 1
+	
+70
+160 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 159 50 3
+	
+70
+161 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 160 50 4
+	
+70
+44 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_MID 43 44 76
+	
+70
+45 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_GOALIE_ZERO 44 41 77
+	
+70
+162 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 161 50 7
+	
+70
+163 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 162 51 8
+	
+70
+164 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 163 52 1
+	
+70
+165 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 164 50 3
+	
+70
+166 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 165 50 4
+	
+70
+46 3 5 0
+@V2 5 SET_ROT_ANGLE SET_ROT_ANGLE_GOALIE_UP 45 41 78
+	
+70
+167 4 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 166 50 7
+	
+70
+168 4 3 0
+@V2 5 ROT_TORQUE_MONITOR ROT_TORQUE_MONITOR_1 167 51 8
+	
+70
+169 5 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_1 168 52 1
+	
+70
+170 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_1 169 50 3
+	
+70
+171 5 0 0
+@V2 5 MC_MoveAbsolute MC_MoveAbsolute_2 170 50 4
+	
+70
+47 3 0 0
+@V2 5 X_POSITION_LOGIC X_POSITION_LOGIC_GOALIE 46 44 79
+	
+80
+172 2 0 0
+@V2 4 IO IO 171 57 0
+	
+84
+173 1 29 0
+@V2 3 @ MedTsk 0 0 0
+F 
+80
+174 2 28 0
+@V2 4 ALL_ROD_INFO ROD_INFO 172 58 0
+	
+70
+175 3 6 0
+@V2 5 ROD_INFORMATION ROD_INFORMATION_1 173 59 1
+	
+70
+179 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_TRANS 177 61 1
+	
+70
+180 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_ROT 178 61 2
+	
+70
+181 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_TRANS 179 60 5
+	
+70
+182 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_ROT 180 60 6
+	
+70
+183 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_TRANS 181 52 7
+	
+70
+184 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_ROT 182 52 8
+	
+70
+176 3 6 0
+@V2 5 ROD_INFORMATION ROD_INFORMATION_2 174 59 2
+	
+70
+185 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_TRANS 183 61 1
+	
+70
+186 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_ROT 184 61 2
+	
+70
+187 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_TRANS 185 60 5
+	
+70
+188 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_ROT 186 60 6
+	
+70
+189 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_TRANS 187 52 7
+	
+70
+190 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_ROT 188 52 8
+	
+70
+177 3 6 0
+@V2 5 ROD_INFORMATION ROD_INFORMATION_3 175 59 3
+	
+70
+191 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_TRANS 189 61 1
+	
+70
+192 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_ROT 190 61 2
+	
+70
+193 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_TRANS 191 60 5
+	
+70
+194 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_ROT 192 60 6
+	
+70
+195 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_TRANS 193 52 7
+	
+70
+196 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_ROT 194 52 8
+	
+70
+178 3 6 0
+@V2 5 ROD_INFORMATION ROD_INFORMATION_4 176 59 4
+	
+70
+197 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_TRANS 195 61 1
+	
+70
+198 4 0 0
+@V2 5 MC_ReadActualPosition MC_ReadActualPosition_ROT 196 61 2
+	
+70
+199 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_TRANS 197 60 5
+	
+70
+200 4 0 0
+@V2 5 MC_ReadActualVelocity MC_ReadActualVelocity_ROT 198 60 6
+	
+70
+201 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_TRANS 199 52 7
+	
+70
+202 4 0 0
+@V2 5 MC_ReadActualTorque MC_ReadActualTorque_ROT 200 52 8
+	
+84
+203 1 1 0
+@V2 3 @ SlowTsk 0 0 0
+F 
+80
+204 2 0 0
+@V2 4 HMI HMI 201 62 0
+	
+84
+205 1 1 0
+@V2 3 @ Start 0 0 0
+F 
+80
+206 2 0 0
+@V2 4 Initialize Initialize 202 63 0
+	

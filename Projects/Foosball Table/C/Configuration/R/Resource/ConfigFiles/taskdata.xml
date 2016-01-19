@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<tasks>
+  <task>
+    <name>FastTsk</name>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>769</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 3</partName>
+      <ioGroup>IAX3</ioGroup>
+      <ioGroup>OAX3</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>1025</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 4</partName>
+      <ioGroup>IAX4</ioGroup>
+      <ioGroup>OAX4</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>1281</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 5</partName>
+      <ioGroup>IAX5</ioGroup>
+      <ioGroup>OAX5</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>1537</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 6</partName>
+      <ioGroup>IAX6</ioGroup>
+      <ioGroup>OAX6</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>1793</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 7</partName>
+      <ioGroup>IAX7</ioGroup>
+      <ioGroup>OAX7</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>2049</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 8</partName>
+      <ioGroup>IAX8</ioGroup>
+      <ioGroup>OAX8</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>2305</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 9</partName>
+      <ioGroup>IAX9</ioGroup>
+      <ioGroup>OAX9</ioGroup>
+    </device>
+    <device>
+      <deviceType>Servo</deviceType>
+      <id>2561</id>
+      <partNum>SGDV-****21*</partNum>
+      <partName>SGDV Rotary - 10</partName>
+      <ioGroup>IAX10</ioGroup>
+      <ioGroup>OAX10</ioGroup>
+    </device>
+  </task>
+</tasks>

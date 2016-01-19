@@ -1,0 +1,11 @@
+(*
+T: FUNCTION_BLOCK Rod2_Move_Tran
+FW: NO
+CI#: 48
+QSL: 9
+QVE: 9
+QVPC: 9
+QPar: 1
+QFBI: 2
+*)
+ROD2_TRAN_EN	@IV 2	@TYP:1	VAR_INPUT

@@ -1,0 +1,64 @@
+(*
+T: FUNCTION_BLOCK MIDD
+FW: NO
+CI#: 41
+QSL: 9
+QVE: 9
+QVPC: 9
+QPar: 4
+QFBI: 2
+*)
+@V 1 6 0
+MID_TRANS	1	VAR_EXTERNAL	@TYP:1062
+@RV 44		     
+
+;
+
+@V 1 7 0
+MID_ROT	2	VAR_EXTERNAL	@TYP:1062
+@RV 43		     
+
+;
+
+@V 1 8 0
+MID_X_POS	3	VAR_EXTERNAL	@TYP:11
+@RV 45		     
+
+;
+
+@V 1 16 0
+MID_FORM	4	VAR_INPUT	@TYP:3
+		     
+
+;
+
+@V 1 17 0
+X_POS	5	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 18 0
+Y_POS	6	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 26 0
+MID_LOGIC	7	VAR	@FB:65
+		     
+
+;
+
+@V 1 27 0
+MID_ACTIONS	8	VAR	@FB:48
+		     
+
+;
+
+@V 1 35 0
+MID_ACTION	9	VAR_OUTPUT	@TYP:3
+		     
+
+;
+

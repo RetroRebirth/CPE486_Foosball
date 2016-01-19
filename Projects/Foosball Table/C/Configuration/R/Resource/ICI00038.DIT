@@ -1,0 +1,94 @@
+(*
+T: FUNCTION_BLOCK Shoot
+FW: NO
+CI#: 38
+QSL: 14
+QVE: 14
+QVPC: 14
+QPar: 2
+QFBI: 2
+*)
+@V 1 6 0
+MC_MoveAbsolute_1	1	VAR	@FB:51
+		     
+
+;
+
+@V 1 11 0
+ROT_AXIS	2	VAR_INPUT	@TYP:1061
+		     
+
+;
+
+@V 1 16 0
+SHOOT_VEL	3	VAR	@TYP:11
+		     
+@TYP:11# 5.00000000000000000E+003
+;
+
+@V 1 17 0
+SHOOT_ACC	4	VAR	@TYP:11
+		     
+@TYP:11# 5.00000000000000000E+005
+;
+
+@V 1 18 0
+ANGLE_DN	5	VAR	@TYP:1
+		     
+
+;
+
+@V 1 19 0
+MC_MoveAbsolute_2	6	VAR	@FB:51
+		     
+
+;
+
+@V 1 20 0
+SHOOT_ANGLE_DOWN	7	VAR	@TYP:11
+		     
+@TYP:11# -5.00000000000000000E+001
+;
+
+@V 1 21 0
+SHOOT_ANGLE_UP	8	VAR	@TYP:11
+		     
+@TYP:11# 5.00000000000000000E+001
+;
+
+@V 1 22 0
+SHOT_DN	9	VAR	@TYP:1
+		     
+
+;
+
+@V 1 27 0
+rod1_SHOOT	10	VAR_EXTERNAL	@TYP:1
+@RV 43		     
+
+;
+
+@V 1 28 0
+ROD2_SHOOT	11	VAR_EXTERNAL	@TYP:1
+@RV 46		     
+
+;
+
+@V 1 29 0
+ROD3_SHOOT	12	VAR_EXTERNAL	@TYP:1
+@RV 47		     
+
+;
+
+@V 1 30 0
+ROD4_SHOOT	13	VAR_EXTERNAL	@TYP:1
+@RV 48		     
+
+;
+
+@V 1 35 0
+SHOOT_NOW	14	VAR_INPUT	@TYP:1
+		     
+
+;
+

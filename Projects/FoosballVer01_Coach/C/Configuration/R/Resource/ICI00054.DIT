@@ -1,0 +1,34 @@
+(*
+T: FUNCTION_BLOCK Y_POS_CHANGE
+FW: NO
+CI#: 54
+QSL: 4
+QVE: 4
+QVPC: 4
+QPar: 3
+QFBI: 0
+*)
+@V 1 6 0
+Y_POS	1	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 7 0
+ENABLE	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 12 0
+ACT_NOW	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 17 0
+PREV_Y_POS	4	VAR RETAIN	@TYP:11
+		     
+@TYP:11# 0.00000000000000000E+000
+;
+

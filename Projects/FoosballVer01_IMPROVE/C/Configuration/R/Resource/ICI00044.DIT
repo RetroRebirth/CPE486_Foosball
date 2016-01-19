@@ -1,0 +1,58 @@
+(*
+T: FUNCTION_BLOCK X_POSITION_LOGIC
+FW: NO
+CI#: 44
+QSL: 8
+QVE: 8
+QVPC: 8
+QPar: 5
+QFBI: 0
+*)
+@V 1 6 0
+CURRENT_X_POS	1	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 7 0
+ROD_X_POS	2	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 12 0
+ZERO_ANGLE	3	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 13 0
+KICK_NOW	4	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 18 0
+KICK_THRESHOLD	5	VAR	@TYP:11
+		     
+
+;
+
+@V 1 23 0
+ANGLE_UP	6	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 28 0
+PASS_THRESHOLD	7	VAR	@TYP:11
+		     
+
+;
+
+@V 1 29 0
+BACK_KICK_THRESHOLD	8	VAR	@TYP:11
+		     
+
+;
+

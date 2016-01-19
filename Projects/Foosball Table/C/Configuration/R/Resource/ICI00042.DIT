@@ -1,0 +1,250 @@
+(*
+T: FUNCTION_BLOCK Power_Drives
+FW: NO
+CI#: 42
+QSL: 40
+QVE: 40
+QVPC: 40
+QPar: 8
+QFBI: 16
+*)
+@V 1 6 0
+MC_Power_1	1	VAR	@FB:55
+		     
+
+;
+
+@V 1 7 0
+MC_Power_2	2	VAR	@FB:55
+		     
+
+;
+
+@V 1 8 0
+MC_Power_3	3	VAR	@FB:55
+		     
+
+;
+
+@V 1 9 0
+MC_Power_4	4	VAR	@FB:55
+		     
+
+;
+
+@V 1 10 0
+MC_Power_5	5	VAR	@FB:55
+		     
+
+;
+
+@V 1 11 0
+MC_Power_6	6	VAR	@FB:55
+		     
+
+;
+
+@V 1 12 0
+MC_Power_7	7	VAR	@FB:55
+		     
+
+;
+
+@V 1 13 0
+MC_Power_8	8	VAR	@FB:55
+		     
+
+;
+
+@V 1 18 0
+ROD1_TRAN	9	VAR_EXTERNAL	@TYP:1061
+@RV 1		     
+
+;
+
+@V 1 19 0
+ROD1_ROT	10	VAR_EXTERNAL	@TYP:1061
+@RV 2		     
+
+;
+
+@V 1 20 0
+ROD2_ROT	11	VAR_EXTERNAL	@TYP:1061
+@RV 4		     
+
+;
+
+@V 1 21 0
+ROD3_TRAN	12	VAR_EXTERNAL	@TYP:1061
+@RV 5		     
+
+;
+
+@V 1 22 0
+ROD3_ROT	13	VAR_EXTERNAL	@TYP:1061
+@RV 6		     
+
+;
+
+@V 1 23 0
+ROD4_TRAN	14	VAR_EXTERNAL	@TYP:1061
+@RV 7		     
+
+;
+
+@V 1 24 0
+ROD4_ROT	15	VAR_EXTERNAL	@TYP:1061
+@RV 8		     
+
+;
+
+@V 1 29 0
+ROD1_EN	16	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 30 0
+ROD2_EN	17	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 31 0
+ROD3_EN	18	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 32 0
+ROD4_EN	19	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 37 0
+ROD1_TRAN_STAT	20	VAR	@TYP:1
+		     
+
+;
+
+@V 1 38 0
+ROD1_ROT_STAT	21	VAR	@TYP:1
+		     
+
+;
+
+@V 1 39 0
+ROD2_TRAN_STAT	22	VAR	@TYP:1
+		     
+
+;
+
+@V 1 40 0
+ROD2_ROT_STAT	23	VAR	@TYP:1
+		     
+
+;
+
+@V 1 41 0
+ROD3_TRAN_STAT	24	VAR	@TYP:1
+		     
+
+;
+
+@V 1 42 0
+ROD3_ROT_STAT	25	VAR	@TYP:1
+		     
+
+;
+
+@V 1 43 0
+ROD4_TRAN_STAT	26	VAR	@TYP:1
+		     
+
+;
+
+@V 1 44 0
+ROD4_ROT_STAT	27	VAR	@TYP:1
+		     
+
+;
+
+@V 1 49 0
+ROD1_STAT	28	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 50 0
+ROD2_STAT	29	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 51 0
+ROD3_STAT	30	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 52 0
+ROD4_STAT	31	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 57 0
+ROD2_TRAN	32	VAR_EXTERNAL	@TYP:1061
+@RV 3		     
+
+;
+
+@V 1 62 0
+MC_Reset_1	33	VAR	@FB:54
+		     
+
+;
+
+@V 1 63 0
+MC_Reset_2	34	VAR	@FB:54
+		     
+
+;
+
+@V 1 64 0
+MC_Reset_3	35	VAR	@FB:54
+		     
+
+;
+
+@V 1 65 0
+MC_Reset_4	36	VAR	@FB:54
+		     
+
+;
+
+@V 1 66 0
+MC_Reset_5	37	VAR	@FB:54
+		     
+
+;
+
+@V 1 67 0
+MC_Reset_6	38	VAR	@FB:54
+		     
+
+;
+
+@V 1 68 0
+MC_Reset_7	39	VAR	@FB:54
+		     
+
+;
+
+@V 1 69 0
+MC_Reset_8	40	VAR	@FB:54
+		     
+
+;
+

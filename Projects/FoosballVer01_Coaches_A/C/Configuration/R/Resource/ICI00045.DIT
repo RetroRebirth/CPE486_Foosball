@@ -1,0 +1,160 @@
+(*
+T: FUNCTION_BLOCK ENABLE_RODS
+FW: NO
+CI#: 45
+QSL: 25
+QVE: 25
+QVPC: 25
+QPar: 9
+QFBI: 4
+*)
+@V 1 6 0
+GOL_TRANS	1	VAR_EXTERNAL	@TYP:1062
+@RV 37		     
+
+;
+
+@V 1 7 0
+GOL_ROT	2	VAR_EXTERNAL	@TYP:1062
+@RV 38		     
+
+;
+
+@V 1 8 0
+DEF_ROT	3	VAR_EXTERNAL	@TYP:1062
+@RV 41		     
+
+;
+
+@V 1 9 0
+DEF_TRANS	4	VAR_EXTERNAL	@TYP:1062
+@RV 40		     
+
+;
+
+@V 1 10 0
+MID_ROT	5	VAR_EXTERNAL	@TYP:1062
+@RV 43		     
+
+;
+
+@V 1 11 0
+MID_TRANS	6	VAR_EXTERNAL	@TYP:1062
+@RV 44		     
+
+;
+
+@V 1 12 0
+FWD_ROT	7	VAR_EXTERNAL	@TYP:1062
+@RV 47		     
+
+;
+
+@V 1 13 0
+FWD_TRANS	8	VAR_EXTERNAL	@TYP:1062
+@RV 46		     
+
+;
+
+@V 1 14 0
+RESET_FWD	9	VAR_EXTERNAL	@TYP:1
+@RV 100		     
+
+;
+
+@V 1 15 0
+RESET_MID	10	VAR_EXTERNAL	@TYP:1
+@RV 99		     
+
+;
+
+@V 1 16 0
+RESET_DEF	11	VAR_EXTERNAL	@TYP:1
+@RV 98		     
+
+;
+
+@V 1 17 0
+RESET_GOL	12	VAR_EXTERNAL	@TYP:1
+@RV 97		     
+
+;
+
+@V 1 25 0
+ENABLE_RODS	13	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 33 0
+ENABLE_FWD	14	VAR	@FB:69
+		     
+
+;
+
+@V 1 34 0
+ENABLE_MID	15	VAR	@FB:69
+		     
+
+;
+
+@V 1 35 0
+ENABLE_DEF	16	VAR	@FB:69
+		     
+
+;
+
+@V 1 36 0
+ENABLE_GOL	17	VAR	@FB:69
+		     
+
+;
+
+@V 1 44 0
+FWD_STAT	18	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 45 0
+FWD_ERROR	19	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 46 0
+MID_STAT	20	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 47 0
+MID_ERROR	21	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 48 0
+DEF_STAT	22	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 49 0
+DEF_ERROR	23	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 50 0
+GOL_STAT	24	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 51 0
+GOL_ERROR	25	VAR_OUTPUT	@TYP:1
+		     
+
+;
+

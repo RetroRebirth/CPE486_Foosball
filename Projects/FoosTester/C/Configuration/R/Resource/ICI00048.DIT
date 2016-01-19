@@ -1,0 +1,58 @@
+(*
+T: FUNCTION_BLOCK SINGLE_ROD_TRANSLATION
+FW: NO
+CI#: 48
+QSL: 8
+QVE: 8
+QVPC: 8
+QPar: 7
+QFBI: 1
+*)
+@V 1 6 0
+TRANS_ROD	1	VAR_INPUT	@TYP:1062
+		     
+
+;
+
+@V 1 7 0
+MOVE_NOW	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 8 0
+DESIRED_POSITION	3	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 9 0
+VELOCITY	4	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 10 0
+ACCEL	5	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 11 0
+MAX_TRANS_DIST	6	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 19 0
+TRANS_DONE	7	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 27 0
+MC_MoveAbsolute_1	8	VAR	@FB:49
+		     
+
+;
+

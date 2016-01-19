@@ -1,0 +1,57 @@
+(*
+T: FUNCTION_BLOCK MC_SetPosition
+FW: YES	NO_VARIANT MC_SetPosition SKIP_NOTHING	SFB_INIT_RELEASE
+CI#: 55
+QSL: 0
+QVE: 8
+QPar: 8
+QFBI: 0
+*)
+
+Axis	1	VAR_IN_OUT	@TYP:24
+		     
+
+;
+
+
+Execute	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+Position	3	VAR_INPUT	@TYP:11
+		     
+
+;
+
+
+Mode	4	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+Done	5	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+Busy	6	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+Error	7	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+ErrorID	8	VAR_OUTPUT	@TYP:7
+		     
+
+;
+

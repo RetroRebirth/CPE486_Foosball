@@ -1,0 +1,88 @@
+(*
+T: FUNCTION_BLOCK ZERO_RODS
+FW: NO
+CI#: 44
+QSL: 13
+QVE: 13
+QVPC: 13
+QPar: 1
+QFBI: 4
+*)
+@V 1 6 0
+GOL_TRANS	1	VAR_EXTERNAL	@TYP:1062
+@RV 37		     
+
+;
+
+@V 1 7 0
+GOL_ROT	2	VAR_EXTERNAL	@TYP:1062
+@RV 38		     
+
+;
+
+@V 1 8 0
+DEF_ROT	3	VAR_EXTERNAL	@TYP:1062
+@RV 41		     
+
+;
+
+@V 1 9 0
+DEF_TRANS	4	VAR_EXTERNAL	@TYP:1062
+@RV 40		     
+
+;
+
+@V 1 10 0
+MID_ROT	5	VAR_EXTERNAL	@TYP:1062
+@RV 43		     
+
+;
+
+@V 1 11 0
+MID_TRANS	6	VAR_EXTERNAL	@TYP:1062
+@RV 44		     
+
+;
+
+@V 1 12 0
+FWD_ROT	7	VAR_EXTERNAL	@TYP:1062
+@RV 47		     
+
+;
+
+@V 1 13 0
+FWD_TRANS	8	VAR_EXTERNAL	@TYP:1062
+@RV 46		     
+
+;
+
+@V 1 21 0
+ZERO_ALL	9	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 29 0
+ZERO_FWD	10	VAR	@FB:68
+		     
+
+;
+
+@V 1 30 0
+ZERO_MID	11	VAR	@FB:68
+		     
+
+;
+
+@V 1 31 0
+ZERO_DEF	12	VAR	@FB:68
+		     
+
+;
+
+@V 1 32 0
+ZERO_GOL	13	VAR	@FB:68
+		     
+
+;
+

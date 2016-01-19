@@ -1,0 +1,454 @@
+(*
+T: PROGRAM Main
+FW: NO
+CI#: 37
+QSL: 74
+QVE: 74
+QVPC: 74
+QPar: 0
+QFBI: 37
+*)
+@V 1 6 0
+ENABLE_GOL	1	VAR	@FB:39
+		     
+
+;
+
+@V 1 7 0
+ZERO_SINGLE_GOL	2	VAR	@FB:43
+		     
+
+;
+
+@V 1 8 0
+KICK_FUN_GOL	3	VAR	@FB:38
+		     
+
+;
+
+@V 1 16 0
+GOL_TRANS	4	VAR_EXTERNAL	@TYP:1062
+@RV 37		     
+
+;
+
+@V 1 21 0
+ZERO_ALL	5	VAR	@TYP:1
+		     
+
+;
+
+@V 1 22 0
+HOME_ALL	6	VAR	@TYP:1
+		     
+
+;
+
+@V 1 27 0
+GOL_ROT	7	VAR_EXTERNAL	@TYP:1062
+@RV 38		     
+
+;
+
+@V 1 28 0
+DEF_TRANS	8	VAR_EXTERNAL	@TYP:1062
+@RV 39		     
+
+;
+
+@V 1 29 0
+DEF_ROT	9	VAR_EXTERNAL	@TYP:1062
+@RV 40		     
+
+;
+
+@V 1 30 0
+MID_TRANS	10	VAR_EXTERNAL	@TYP:1062
+@RV 42		     
+
+;
+
+@V 1 31 0
+MID_ROT	11	VAR_EXTERNAL	@TYP:1062
+@RV 41		     
+
+;
+
+@V 1 32 0
+FWD_TRANS	12	VAR_EXTERNAL	@TYP:1062
+@RV 43		     
+
+;
+
+@V 1 33 0
+FWD_ROT	13	VAR_EXTERNAL	@TYP:1062
+@RV 44		     
+
+;
+
+@V 1 38 0
+ROD_ENABLE_ALL	14	VAR	@TYP:1
+		     
+
+;
+
+@V 1 46 0
+RESET_GOL	15	VAR	@TYP:1
+		     
+
+;
+
+@V 1 47 0
+GOL_STAT	16	VAR	@TYP:1
+		     
+
+;
+
+@V 1 48 0
+GOL_ERROR	17	VAR	@TYP:1
+		     
+
+;
+
+@V 1 49 0
+ZERO_GOL	18	VAR	@TYP:1
+		     
+
+;
+
+@V 1 50 0
+HOME_SINGLE_GOL	19	VAR	@FB:42
+		     
+
+;
+
+@V 1 51 0
+HOME_GOL	20	VAR	@TYP:1
+		     
+
+;
+
+@V 1 52 0
+GOL_POSITION_LOGIC	21	VAR	@FB:48
+		     
+
+;
+
+@V 1 53 0
+TLIM_GOL	22	VAR	@TYP:1
+		     
+
+;
+
+@V 1 54 0
+KICK_GOL_DONE	23	VAR	@TYP:1
+		     
+
+;
+
+@V 1 55 0
+SET_ROT_ANGLE_GOL_UP	24	VAR	@FB:41
+		     
+
+;
+
+@V 1 63 0
+ENABLE_DEF	25	VAR	@FB:39
+		     
+
+;
+
+@V 1 64 0
+DEF_STAT	26	VAR	@TYP:1
+		     
+
+;
+
+@V 1 65 0
+DEF_ERROR	27	VAR	@TYP:1
+		     
+
+;
+
+@V 1 66 0
+RESET_DEF	28	VAR	@TYP:1
+		     
+
+;
+
+@V 1 67 0
+KICK_FUN_DEF	29	VAR	@FB:38
+		     
+
+;
+
+@V 1 68 0
+ZERO_SINGLE_DEF	30	VAR	@FB:43
+		     
+
+;
+
+@V 1 69 0
+ZERO_DEF	31	VAR	@TYP:1
+		     
+
+;
+
+@V 1 70 0
+HOME_DEF	32	VAR	@TYP:1
+		     
+
+;
+
+@V 1 71 0
+HOME_SINGLE_DEF	33	VAR	@FB:42
+		     
+
+;
+
+@V 1 72 0
+SET_ROT_ANGLE_DEF_ZERO	34	VAR	@FB:41
+		     
+
+;
+
+@V 1 73 0
+DEF_POSITION_LOGIC	35	VAR	@FB:45
+		     
+
+;
+
+@V 1 74 0
+KICK_DEF_DONE	36	VAR	@TYP:1
+		     
+
+;
+
+@V 1 75 0
+TLIM_DEF	37	VAR	@TYP:1
+		     
+
+;
+
+@V 1 76 0
+X_POSITION_LOGIC_DEF	38	VAR	@FB:44
+		     
+
+;
+
+@V 1 77 0
+SET_ROT_ANGLE_DEF_UP	39	VAR	@FB:41
+		     
+
+;
+
+@V 1 85 0
+ENABLE_MID	40	VAR	@FB:39
+		     
+
+;
+
+@V 1 86 0
+KICK_FUN_MID	41	VAR	@FB:38
+		     
+
+;
+
+@V 1 87 0
+RESET_MID	42	VAR	@TYP:1
+		     
+
+;
+
+@V 1 88 0
+ZERO_SINGLE_MID	43	VAR	@FB:43
+		     
+
+;
+
+@V 1 89 0
+ZERO_MID	44	VAR	@TYP:1
+		     
+
+;
+
+@V 1 90 0
+HOME_MID	45	VAR	@TYP:1
+		     
+
+;
+
+@V 1 91 0
+HOME_SINGLE_MID	46	VAR	@FB:42
+		     
+
+;
+
+@V 1 92 0
+SET_ROT_ANGLE_MID	47	VAR	@FB:41
+		     
+
+;
+
+@V 1 93 0
+SINGLE_ROD_TRANSLATION_MID	48	VAR	@FB:49
+		     
+
+;
+
+@V 1 94 0
+MID_POSITION_LOGIC	49	VAR	@FB:46
+		     
+
+;
+
+@V 1 95 0
+KICK_MID_DONE	50	VAR	@TYP:1
+		     
+
+;
+
+@V 1 96 0
+TLIM_MID	51	VAR	@TYP:1
+		     
+
+;
+
+@V 1 97 0
+X_POSITION_LOGIC_MID	52	VAR	@FB:44
+		     
+
+;
+
+@V 1 98 0
+SET_ROT_ANGLE_MID_UP	53	VAR	@FB:41
+		     
+
+;
+
+@V 1 106 0
+KICK_FUN_FWD	54	VAR	@FB:38
+		     
+
+;
+
+@V 1 107 0
+ZERO_FWD	55	VAR	@TYP:1
+		     
+
+;
+
+@V 1 108 0
+ENABLE_FWD	56	VAR	@FB:39
+		     
+
+;
+
+@V 1 109 0
+HOME_SINGLE_FWD	57	VAR	@FB:42
+		     
+
+;
+
+@V 1 110 0
+HOME_FWD	58	VAR	@TYP:1
+		     
+
+;
+
+@V 1 111 0
+RESET_FWD	59	VAR	@TYP:1
+		     
+
+;
+
+@V 1 112 0
+ZERO_SINGLE_FWD	60	VAR	@FB:43
+		     
+
+;
+
+@V 1 113 0
+SINGLE_ROD_TRANSLATION_FWD	61	VAR	@FB:49
+		     
+
+;
+
+@V 1 114 0
+X_POSITION_LOGIC_FWD	62	VAR	@FB:44
+		     
+
+;
+
+@V 1 115 0
+SET_ROT_ANGLE_FWD_Zero	63	VAR	@FB:41
+		     
+
+;
+
+@V 1 116 0
+SET_ROT_ANGLE_FWD_UP	64	VAR	@FB:41
+		     
+
+;
+
+@V 1 117 0
+TLIM_FWD	65	VAR	@TYP:1
+		     
+
+;
+
+@V 1 118 0
+KICK_FWD_DONE	66	VAR	@TYP:1
+		     
+
+;
+
+@V 1 119 0
+FWD_POSITION_LOGIC	67	VAR	@FB:47
+		     
+
+;
+
+@V 1 127 0
+SINGLE_ROD_TRANSLATION_GOL	68	VAR	@FB:49
+		     
+
+;
+
+@V 1 128 0
+SINGLE_ROD_TRANSLATION_DEF	69	VAR	@FB:49
+		     
+
+;
+
+@V 1 133 0
+Y_POSITION	70	VAR_EXTERNAL	@TYP:11
+@RV 82		     
+
+;
+
+@V 1 138 0
+SET_ROT_ANGLE_GOL_ZERO	71	VAR	@FB:41
+		     
+
+;
+
+@V 1 143 0
+X_POSITION	72	VAR_EXTERNAL	@TYP:11
+@RV 83		     
+
+;
+
+@V 1 148 0
+X_POSITION_LOGIC_GOL	73	VAR	@FB:44
+		     
+
+;
+
+@V 1 149 0
+TWO_MAN_DEF	74	VAR	@FB:40
+		     
+
+;
+

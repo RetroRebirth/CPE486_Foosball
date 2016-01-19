@@ -1,0 +1,29 @@
+FUNCTION_BLOCK	Read_Positions			PT=1	Read_Positions	HIDDEN=0	
+FUNCTION_BLOCK	Read_Velocities			PT=1	Read_Velocities	HIDDEN=0	
+FUNCTION_BLOCK	Read_Torques			PT=1	Read_Torques	HIDDEN=0	
+FUNCTION_BLOCK	Rod1_Move_Tran			PT=1	Rod1_Move_Tran	HIDDEN=0	
+FUNCTION_BLOCK	Rod1_Move_Rot			PT=1	Rod1_Move_Rot	HIDDEN=0	
+FUNCTION_BLOCK	Rod1_Translation_Calc			PT=1	Rod1_Translation_Calc	HIDDEN=0	Calculates absolute move position for rod 1 translation
+FUNCTION_BLOCK	Rod1_Rotation_Calc			PT=1	Rod1_Rotation_Calc	HIDDEN=0	
+FUNCTION_BLOCK	Rod2_Move_Rot			PT=1	Rod2_Move_Rot	HIDDEN=0	
+FUNCTION_BLOCK	Rod2_Rotation_Calc			PT=1	Rod2_Rotation_Calc	HIDDEN=0	
+FUNCTION_BLOCK	Rod2_Translation_Calc			PT=1	Rod2_Translation_Calc	HIDDEN=0	Calculates absolute move position for rod 2 translation
+FUNCTION_BLOCK	Rod2_Move_Tran			PT=1	Rod2_Move_Tran	HIDDEN=0	
+FUNCTION_BLOCK	Rod3_Move_Rot			PT=1	Rod3_Move_Rot	HIDDEN=0	
+FUNCTION_BLOCK	Rod3_Rotation_Calc			PT=1	Rod3_Rotation_Calc	HIDDEN=0	
+FUNCTION_BLOCK	Rod3_Move_Tran			PT=1	Rod3_Move_Tran	HIDDEN=0	
+FUNCTION_BLOCK	Rod3_Translation_Calc			PT=1	Rod3_Translation_Calc	HIDDEN=0	Calculates absolute move position for rod 3 translation
+FUNCTION_BLOCK	Rod4_Rotation_Calc			PT=1	Rod4_Rotation_Calc	HIDDEN=0	
+FUNCTION_BLOCK	Rod4_Move_Rot			PT=1	Rod4_Move_Rot	HIDDEN=0	
+FUNCTION_BLOCK	Rod4_Move_Tran			PT=1	Rod4_Move_Tran	HIDDEN=0	
+FUNCTION_BLOCK	Rod4_Translation_Calc			PT=1	Rod4_Translation_Calc	HIDDEN=0	Calculates absolute move position for rod 1 translation
+FUNCTION_BLOCK	Home			PT=1	Home	HIDDEN=0	
+FUNCTION_BLOCK	Manual_Move			PT=1	Manual_Move	HIDDEN=0	
+FUNCTION_BLOCK	Shoot			PT=1	Shoot	HIDDEN=0	
+PROGRAM	OUTPUT			PT=1	OUTPUT	HIDDEN=0	
+PROGRAM	Initialize			PT=1	Initialize	HIDDEN=0	
+PROGRAM	IO			PT=1	IO	HIDDEN=0	
+PROGRAM	Main			PT=1	Main	HIDDEN=0	
+FUNCTION_BLOCK	Power_Drives			PT=1	Power_Drives	HIDDEN=0	
+FUNCTION_BLOCK	Set_Zero			PT=1	Set_Zero	HIDDEN=0	
+PROGRAM	HMI			PT=1	HMI	HIDDEN=0	

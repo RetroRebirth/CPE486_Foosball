@@ -1,0 +1,130 @@
+(*
+T: FUNCTION_BLOCK Set_Zero
+FW: NO
+CI#: 39
+QSL: 20
+QVE: 20
+QVPC: 20
+QPar: 4
+QFBI: 8
+*)
+@V 1 6 0
+MC_SetPosition_1	1	VAR	@FB:52
+		     
+
+;
+
+@V 1 11 0
+rod1_tRAN	2	VAR_EXTERNAL	@TYP:1061
+@RV 1		     
+
+;
+
+@V 1 12 0
+ROD1_ROT	3	VAR_EXTERNAL	@TYP:1061
+@RV 2		     
+
+;
+
+@V 1 17 0
+MC_SetPosition_2	4	VAR	@FB:52
+		     
+
+;
+
+@V 1 18 0
+MC_SetPosition_3	5	VAR	@FB:52
+		     
+
+;
+
+@V 1 19 0
+MC_SetPosition_4	6	VAR	@FB:52
+		     
+
+;
+
+@V 1 20 0
+MC_SetPosition_5	7	VAR	@FB:52
+		     
+
+;
+
+@V 1 21 0
+MC_SetPosition_6	8	VAR	@FB:52
+		     
+
+;
+
+@V 1 22 0
+MC_SetPosition_7	9	VAR	@FB:52
+		     
+
+;
+
+@V 1 23 0
+MC_SetPosition_8	10	VAR	@FB:52
+		     
+
+;
+
+@V 1 28 0
+ROD2_TRAN	11	VAR_EXTERNAL	@TYP:1061
+@RV 3		     
+
+;
+
+@V 1 33 0
+ROD1_ZERO	12	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 34 0
+ROD2_ZERO	13	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 39 0
+ROD2_ROT	14	VAR_EXTERNAL	@TYP:1061
+@RV 4		     
+
+;
+
+@V 1 40 0
+ROD3_TRAN	15	VAR_EXTERNAL	@TYP:1061
+@RV 5		     
+
+;
+
+@V 1 41 0
+ROD3_ROT	16	VAR_EXTERNAL	@TYP:1061
+@RV 6		     
+
+;
+
+@V 1 42 0
+ROD4_TRAN	17	VAR_EXTERNAL	@TYP:1061
+@RV 7		     
+
+;
+
+@V 1 43 0
+ROD4_ROT	18	VAR_EXTERNAL	@TYP:1061
+@RV 8		     
+
+;
+
+@V 1 48 0
+ROD3_ZERO	19	VAR_INPUT	@TYP:1
+		     
+
+;
+
+@V 1 49 0
+ROD4_ZERO	20	VAR_INPUT	@TYP:1
+		     
+
+;
+

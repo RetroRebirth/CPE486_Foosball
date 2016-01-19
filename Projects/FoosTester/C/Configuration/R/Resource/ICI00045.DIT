@@ -1,0 +1,58 @@
+(*
+T: FUNCTION_BLOCK MID_POSITION_LOGIC
+FW: NO
+CI#: 45
+QSL: 8
+QVE: 8
+QVPC: 8
+QPar: 3
+QFBI: 0
+*)
+@V 1 6 0
+WALL_OFFSET	1	VAR	@TYP:11
+		     
+
+;
+
+@V 1 7 0
+MAX_DIST	2	VAR	@TYP:11
+		     
+
+;
+
+@V 1 8 0
+ZONE_WIDTH	3	VAR	@TYP:11
+		     
+
+;
+
+@V 1 9 0
+PLAYER_SPACING	4	VAR	@TYP:11
+		     
+
+;
+
+@V 1 10 0
+PREV_Y_POS	5	VAR	@TYP:11
+		     
+
+;
+
+@V 1 15 0
+Y_POS	6	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 20 0
+MAKE_MOV	7	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+@V 1 21 0
+MOV_DIST	8	VAR_OUTPUT	@TYP:11
+		     
+
+;
+

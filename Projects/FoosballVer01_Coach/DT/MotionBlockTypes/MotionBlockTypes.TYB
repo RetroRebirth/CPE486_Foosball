@@ -1,0 +1,254 @@
+(*************************************************************************)
+(*                                                                       *)
+(*     START of YEA DataTypes for PLCopen Plus Function Blocks           *)
+(*                                                                       *)
+(*            DO NOT MODIFY THE DATA TYPES IN THIS AREA                  *)
+(*                                                                       *)
+(*************************************************************************)
+
+TYPE
+  (******************************      Enumerated Types      *********************************)
+  MC_BufferMode:(Aborting, Buffered, BlendingLow, BlendingPrevious, BlendingNext, BlendingHigh);
+  MC_Direction:(positive_direction, shortest_way, negative_direction, current_direction);
+  MC_Detection_Pattern: (Rising_Edge, Falling_Edge);
+  MC_SwitchMode:(On, Off, EdgeOn, EdgeOff, EdgeSwitchPositive, EdgeSwitchNegative);
+  Y_AdjustMode:(MasterDistance, ElapsedTime, WithinRange);
+  Y_EngageMethod:(AtPosition, Immediate, Linked);
+  Y_DisengageMethod:(AtPosition, Immediate, EndOfProfile);
+  Y_TableType:(Undefined, MasterSlaveArray);
+
+
+
+  (********************************      Data Types      *************************************)
+  AXIS_REF:STRUCT
+    AxisNum:UINT;           (*  Logical Axis reference, see Hardware Configuration for logical axis numbers.  *)
+  END_STRUCT;
+
+
+  (* Inputs and outputs are referenced via a variable of the type INPUT_REF or OUTPUT_REF *)
+  INPUT_REF:STRUCT
+    ID:UINT;                (*  Reserved for future use  *)
+  END_STRUCT;
+
+
+  (* MC_TouchProbe requires a trigger referenced via a variable of the type TRIGGER_REF *)
+  TRIGGER_REF:STRUCT
+    Input:INPUT_REF;        (*  Reserved for future use  *)
+    Bit:UINT;               (*  Set to 0,1,2,or 3 depending on which latch on the hardware device is used.  *)
+    Pattern:INT;            (*  Reserved for future use  *)
+    ID:UINT;                (*  Reserved for future use  *)
+  END_STRUCT;
+
+
+  Y_ENGAGE_DATA:STRUCT
+    StartMode:INT;          (*  Possible values are described in Y_EngageMethod  *)
+    MasterRelative:BOOL;    (*  Refers to the engage behavior.  Default is MasterRelative=FALSE, meaning the master sawtooth position is used for synchronization with the data table.  *)
+    SlaveAbsolute:BOOL;     (*  Refers to the engage behavior.  Default is SlaveAbsolute=FALSE, meaning the INITIAL slave position (when engaged) will be used as a base offset for data table.  *)
+    RampIn:INT;             (*  Reserved for future use  *)
+    RampInData1:LREAL;      (*  Reserved for future use  *)
+    RampInData2:LREAL;      (*  Reserved for future use  *)
+    RampInData3:LREAL;      (*  Reserved for future use  *)
+    RampInData4:LREAL;      (*  Reserved for future use  *)
+  END_STRUCT;
+
+
+  Y_DISENGAGE_DATA:STRUCT
+    EndMode:INT;            (*  Possible values are described in Y_DisengageMethod   *)
+    RampOut:INT;            (*  Reserved for future use  *)
+    RampOutData1:LREAL;     (*  Reserved for future use  *)
+    RampOutData2:LREAL;     (*  Reserved for future use  *)
+    RampOutData3:LREAL;     (*  Reserved for future use  *)
+    RampOutData4:LREAL;     (*  Reserved for future use  *)
+  END_STRUCT;
+
+
+  Y_CAM_HEADER:STRUCT
+    TableType:INT;          (*  Only table type 1 is supported.  Master/Slave data pairs of position values.  *)
+    Reserved1:UINT;
+    DataSize:UDINT;         (*  The size of MS_Data in bytes.  Multiply the number of master / slave pairs * 16  *)
+  END_STRUCT;
+
+
+  Y_MS_PAIR:STRUCT
+    Master:LREAL;           (*  Master position in master user units.  One or many Y_MS_PAIR make up a cam motion profile  *)
+    Slave:LREAL;            (*  Slave position in slave user units.  One or many Y_MS_PAIR make up a cam motion profile  *)
+  END_STRUCT;
+
+
+  Y_MS_HEADER:STRUCT        (*  For more information, see the Camming section of the PLCopen manual  *)
+    SlaveIncremental:BOOL;  (*  FALSE (default) indicates that the slave data in the Y_MS_CAM_STRUCT is absolute from the beginning of the data.  *)
+    MasterIncremental:BOOL; (*  FALSE (default) indicates that the slave data in the Y_MS_CAM_STRUCT is absolute from the beginning of the data.  *)
+                            (*  TRUE indicates that the data in the Y_MS_CAM_STRUCT is an incremental from point to point in the entire data collection.  *)
+    Reserved1:UINT;         (*  Reserved for future use  *)
+    Reserved2:UINT;         (*  Reserved for future use  *)
+    Reserved3:UINT;         (*  Reserved for future use  *)
+  END_STRUCT;
+
+
+  MS_Array_Type:ARRAY[0..2880] OF Y_MS_PAIR;
+
+  Y_MS_CAM_STRUCT:STRUCT    (*  Refer to the Camming section of the PLCopen help manual for details  *)
+    Header:Y_CAM_HEADER;
+    MS_Header:Y_MS_HEADER;
+    MS_Data:MS_Array_Type;  (*  One or many Y_MS_PAIR make up a cam motion profile.  *)
+  END_STRUCT;
+
+
+  MC_TP_PAIR:STRUCT         (*  Reserved for future use  *)
+    RelTime:LREAL;          (* time relative to the start of the move; must start at 0  *)
+    RelPos:LREAL;           (* pos relative to the start of the move; must start at 0   *)
+  END_STRUCT;
+
+
+  TP_Array_Typ:ARRAY[0..512] OF MC_TP_PAIR;  (*  Reserved for future use  *)
+
+  MC_TP_REF:STRUCT
+    Rows:UINT;
+    TP_ARRAY:TP_Array_Typ;
+  END_STRUCT;
+
+
+  MC_TV_PAIR:STRUCT         (*  Reserved for future use  *)
+    RelTime:LREAL;
+    Velocity:LREAL;
+  END_STRUCT;
+
+
+  TV_Array_Typ:ARRAY[0..512] OF MC_TV_PAIR;  (*  Reserved for future use  *)
+
+  MC_TV_REF:STRUCT
+    Rows:UINT;
+    TV_ARRAY:TV_Array_Typ;
+  END_STRUCT;
+
+
+  MC_TA_PAIR:STRUCT         (*  Reserved for future use  *)
+    RelTime:LREAL;
+    Acceleration:LREAL;
+  END_STRUCT;
+
+
+  TA_Array_Typ:ARRAY[0..512] OF MC_TA_PAIR;
+
+  MC_TA_REF:STRUCT          (*  Reserved for future use  *)
+    Rows:UINT;
+    TA_ARRAY:TA_Array_Typ;
+  END_STRUCT;
+
+
+  OUTPUT_REF:STRUCT         (*  Reserved for future use  *)
+    ID:UINT;
+  END_STRUCT;
+
+
+  (*   For use with the Y_ReadMultipleParameters Function Block   *)
+  Params:STRUCT
+    Number:UINT;
+    Reserved:UDINT;
+    Value:LREAL;
+  END_STRUCT;  
+
+  (*   For use with the Y_ReadMultipleParameters Function Block   *)
+  ParamList: ARRAY[0..99] OF Params;
+
+  (*   For use with the Y_ReadMultipleParameters Function Block   *)
+  PrmStruct:STRUCT
+    LastParam:INT;
+    Reserved:UDINT;
+    ParamData:ParamList;
+  END_STRUCT;
+
+
+END_TYPE
+
+
+(**************************************************************************)
+(*                                                                        *)
+(*          END of YEA DataTypes for PLCopen Plus Function Blocks         *)
+(*                                                                        *)
+(*             DO NOT MODIFY THE DATA TYPES IN THIS AREA                  *)
+(*                                                                        *)
+(*                                                                        *)
+(**************************************************************************)
+
+
+
+
+
+(***********************************************************************)
+(*                  Y_Motion Data Types Worksheet                      *)
+(*                                                                     *)
+(*            DO NOT MODIFY THE DATA TYPES IN THIS AREA                *)
+(*                                                                     *)
+(***********************************************************************)
+
+(*   Library: YMotion   *)
+
+
+TYPE
+  (***********************  Enumerated Types  **************************)
+
+  (*  For Y_DirectControl function block  *)
+
+  Y_ControlMode : ( NoControl, PositionMode, VelocityTLMode, TorqueVLMode );
+
+
+
+  (***********************     Data Types     **************************)
+
+  (*  AXIS_REF : Defined in PLCopenPlus firmware library *)
+
+
+
+  (*  For Y_ProbeContinuous Buffer Input  *)
+
+  CONTINUOUS_LATCH_RECORD : STRUCT
+    ValueCyclic : LREAL;            (*  Cyclic latch value (rotary modulus)  *)
+    ValueNonCyclic : LREAL;         (*  Non-cyclic latch value  *)
+    InputID : INT;                  (*  Input signal ID corresponding to the latched data.  Indicates C-Channel, EXT1, EXT2, ETX3  *)
+    PatternIndex : UINT;            (*  Signal pattern array index  *)
+    PatternCount : UINT;            (*  Signal pattern repeat count  *)
+    Reserved : UINT;
+  END_STRUCT;
+
+
+  LATCH_BUFFER_TYP : ARRAY[0..127] OF CONTINUOUS_LATCH_RECORD;
+
+  CONTINUOUS_REF : STRUCT
+    BufferSize : UINT;              (*  Maximum number of registration marks that will be tracked by the application at any one time  *)
+    BufferLevel : UINT;             (*  The number of registraion marks in the buffer and not yet processed by the application  *)
+    StorePointer : UINT;            (*  Array index of the LATCH_BUFFER_TYP last stored by Y_ProbeContinuous  *)
+    UsePointer : UINT;              (*  Array index of the next LATCH_BUFFER_TYP to be used by the application  *)
+    Buffer : LATCH_BUFFER_TYP;      (*  Array of continuous latch data *)
+  END_STRUCT;
+
+
+
+  (*  For Y_ProbeContinuous Pattern Input  *)
+
+  PATTERN_ARRAY_TYP : ARRAY[0..7] OF UINT;
+
+  PATTERN_REF : STRUCT
+    PatternSize : UINT;                 (*  Number of sensors that will operate in a repeating pattern.  Sent to Sigma-5 Pn 850  *)
+    PatternCount : UINT;                (*  Number of times the pattern repeats until the FB will be Done.  UINT#0=infinite.  Sent to Sigma-5 Pn 851  *)
+    PatternArray : PATTERN_ARRAY_TYP;   (*  Array of signal ID pattern, indicating C channel, EXT1, EXT2, EXT3.  Sent to Sigma-5 Pn 853 and Pn 854 *)
+  END_STRUCT;
+
+
+  DateAndTime:STRUCT                (*  For use with RealTimeClock in the Yaskawa Toolbox, and Set_RTC in the Y_Motion firmware library  *)
+    Year:INT;
+    Month:INT;
+    Day:INT;
+    Hour:INT;
+    Minute:INT;
+    Second:INT;
+    MilliSecond:INT;
+  END_STRUCT;
+
+
+END_TYPE
+
+
+(***********************************************************************)
+(*               END Y_Motion Data Types Worksheet                     *)
+(***********************************************************************)
