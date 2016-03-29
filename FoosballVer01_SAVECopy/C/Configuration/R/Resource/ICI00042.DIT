@@ -1,0 +1,64 @@
+(*
+T: FUNCTION_BLOCK Defense
+FW: NO
+CI#: 42
+QSL: 9
+QVE: 9
+QVPC: 9
+QPar: 4
+QFBI: 0
+*)
+@V 1 6 0
+GOAL_MIN	1	VAR	@TYP:11
+		     
+
+;
+
+@V 1 7 0
+GOAL_MAX	2	VAR	@TYP:11
+		     
+
+;
+
+@V 1 8 0
+GOAL_MID	3	VAR	@TYP:11
+		     
+
+;
+
+@V 1 9 0
+PLAYER_WIDTH	4	VAR	@TYP:11
+		     
+
+;
+
+@V 1 14 0
+Y_VALUE	5	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 19 0
+ROD1_POS	6	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 20 0
+ROD2_POS	7	VAR_OUTPUT	@TYP:11
+		     
+
+;
+
+@V 1 25 0
+X_VALUE	8	VAR_INPUT	@TYP:11
+		     
+
+;
+
+@V 1 30 0
+START_ALL	9	VAR_EXTERNAL	@TYP:1
+@RV 47		     
+
+;
+

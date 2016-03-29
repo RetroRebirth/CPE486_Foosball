@@ -1,0 +1,69 @@
+(*
+T: FUNCTION_BLOCK MC_Power
+FW: YES	NO_VARIANT MC_Power SKIP_NOTHING	SFB_INIT_RELEASE
+CI#: 37
+QSL: 0
+QVE: 10
+QPar: 10
+QFBI: 0
+*)
+
+Axis	1	VAR_IN_OUT	@TYP:24
+		     
+
+;
+
+
+Enable	2	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+Enable_Positive	3	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+Enable_Negative	4	VAR_INPUT	@TYP:1
+		     
+
+;
+
+
+BufferMode	5	VAR_INPUT	@TYP:3
+		     
+
+;
+
+
+Status	6	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+Busy	7	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+Active	8	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+Error	9	VAR_OUTPUT	@TYP:1
+		     
+
+;
+
+
+ErrorID	10	VAR_OUTPUT	@TYP:7
+		     
+
+;
+

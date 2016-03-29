@@ -1,0 +1,16 @@
+(*
+T: PROGRAM IO
+FW: NO
+CI#: 59
+QSL: 1
+QVE: 1
+QVPC: 1
+QPar: 0
+QFBI: 1
+*)
+@V 1 6 0
+CTU	1	VAR	@FB:60
+		     
+
+;
+

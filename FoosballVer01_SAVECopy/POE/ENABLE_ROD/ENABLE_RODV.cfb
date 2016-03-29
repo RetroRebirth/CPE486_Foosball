@@ -1,0 +1,5 @@
+MC_Power_TRANS	MC_Power
+MC_Power_ROT	MC_Power
+MC_Reset_TRANS	MC_Reset
+MC_Reset_ROT	MC_Reset
+MC_MoveAbsolute	MC_MoveAbsolute

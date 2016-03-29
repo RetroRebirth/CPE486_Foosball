@@ -1,6 +1,0 @@
-X_Guess,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,LREAL,,,VAR_OUTPUT,NOT USED,,Output of best X guess,
-X_POS,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,LREAL,,,VAR_INPUT,NOT USED,,,
-X_Values,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,PositionArray,,,VAR,NOT USED,,Array of previous x position values,
-Y_Guess,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,LREAL,,,VAR_OUTPUT,NOT USED,,Output of best Y guess,
-Y_POS,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,LREAL,,,VAR_INPUT,NOT USED,,,
-Y_Values,POE\POS_ARRAY\POS_ARRAYV.VB,,,,,,PositionArray,,,VAR,NOT USED,,Array of previous y position values,

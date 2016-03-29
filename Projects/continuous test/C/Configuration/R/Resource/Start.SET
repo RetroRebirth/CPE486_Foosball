@@ -1,4 +1,0 @@
-TASK Start
-(TYPE := SYSTEM,
-SPG := WarmStart
-);

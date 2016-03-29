@@ -1,9 +1,0 @@
-<io>
-  <ioManager>
-    <ioScan>
-      <triggerMultiple>1</triggerMultiple>
-      <offset>0</offset>
-      <maxDuration>0.000000000</maxDuration>
-    </ioScan>
-  </ioManager>
-</io>

@@ -1,0 +1,52 @@
+(*
+T: PROGRAM Buttons
+FW: NO
+CI#: 38
+QSL: 7
+QVE: 7
+QVPC: 7
+QPar: 0
+QFBI: 0
+*)
+@V 1 6 0
+IO_BUTTON_0	1	VAR_EXTERNAL	@TYP:1
+@RV 48		     
+
+;
+
+@V 1 7 0
+IO_BUTTON_1	2	VAR_EXTERNAL	@TYP:1
+@RV 49		     
+
+;
+
+@V 1 8 0
+IO_BUTTON_2	3	VAR_EXTERNAL	@TYP:1
+@RV 50		     
+
+;
+
+@V 1 9 0
+IO_BUTTON_3	4	VAR_EXTERNAL	@TYP:1
+@RV 51		     
+
+;
+
+@V 1 10 0
+POWER_ALL	5	VAR_EXTERNAL	@TYP:1
+@RV 45		     
+
+;
+
+@V 1 11 0
+HOME_ALL	6	VAR_EXTERNAL	@TYP:1
+@RV 46		     
+
+;
+
+@V 1 12 0
+START_ALL	7	VAR_EXTERNAL	@TYP:1
+@RV 47		     
+
+;
+
